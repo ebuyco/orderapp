@@ -3,8 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
-    font-family: 'radnika_next';
-    src: url('./static/radnikanext-medium-webfont.woff2') format('woff2');
+  font-family: 'Montserrat', sans-serif;
+  src: url('./assets/fonts/Montserrat-Regular.ttf, Montserrat-Bold.ttf, Montserrat-SemiBold.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -20,11 +20,11 @@ body {
   margin: 0;
   font-size: 1.5rem;
   line-height: 2;
-  font-family: 'radnika_next', sans-serif;
+  font-family: 'Montserrat', sans-serif;
  
 }
 
-button {  font-family:'radnika_next', sans-serif; }
+button {  font-family:'Montserrat', sans-serif; }
 `;
 
 export default GlobalStyle;

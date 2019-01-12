@@ -4,7 +4,7 @@ const Head = styled.div`
     background-color: #00c5af;
     font-weight: 400;
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;  
+    font-family:  'radnika_next', sans-serif;  
     height: 6vh;
    
     > h2 {
