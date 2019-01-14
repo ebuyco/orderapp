@@ -3,24 +3,30 @@ import styled from 'styled-components';
 const BurgerStyles = styled.div`
     width:100%;
     margin: 0 auto;
-    height: 250px;
+    height: auto
     overflow: scroll;
-    font-family: 'Montserrat-Bold, sans-serif'
+    font-family: 'Montserrat-Bold';
     font-weight: bold;
     font-size: 1.2rem;
     text-align: center;
+    background-color: #FDFEFE;
+    box-shadow: -6px 6px 20px 0px #ccc;
+    padding-top: 3rem;
+    padding-bottom: 3rem
     @media(min-width: 500px) and (min-height: 400px) {
-        width: 350px;
-        height: 300px;
+        width: 100%;
     }
     @media(min-width: 500px) and (min-height: 401px) {
-        width: 450px;
-        height: 400px;
+        width: 100%;
     }
     @media(min-width: 1000px) and (min-height: 700px) {
-        width: 700px;
-        height: 600px;
+        width: 100%;
     }
 `;
 
-export default BurgerStyles;
+const MessageStyle = styled.p`
+        font-family: 'Montserrat-Medium',
+        font-size: 2rem;
+`;
+
+export { BurgerStyles, MessageStyle };

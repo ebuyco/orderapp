@@ -1,13 +1,13 @@
 import styled, { keyframes } from 'styled-components';
 
 const BunsUpper = styled.img`
-       display: flex;
-       justify-content: center;
        align-items: center;
+       display: flex;
+       height: auto;
+       justify-content: center;
        margin: 0 auto;
        text-align: center;
-       width: 25%;
-      height: auto;
+      width: 25%;
       &.glow {
         animation: ${glow} 0.5s ease-in-out infinite alternate;
       }
@@ -15,85 +15,85 @@ const BunsUpper = styled.img`
 `;
 
 const BunsLower = styled.img`
-       display: flex;
-       justify-content: center;
        align-items: center;
+       display: flex;
+       height: auto;
+       justify-content: center;
        margin: 0 auto;
        text-align: center;
-       width: 25%;
-      height: auto;
+      width: 25%;
 
 `;
 
 const Cheese = styled.img`
-       display: flex;
-       justify-content: center;
        align-items: center;
+       display: flex;
+       height: auto;
+       justify-content: center;
        margin: 0 auto;
        text-align: center;
-       width: 31%;
-      height: auto;
+      width: 31%;
 
 `;
 
 const Meat = styled.img`
-       display: flex;
-       justify-content: center;
        align-items: center;
+       display: flex;
+       height: auto;
+       justify-content: center;
        margin: 0 auto;
        text-align: center;
-       width: 31%;
-      height: auto;
+      width: 31%;
 
 `;
 
 const Salad = styled.img`
-       display: flex;
-       justify-content: center;
        align-items: center;
+       display: flex;
+       height: auto;
+       justify-content: center;
        margin: 0 auto;
        text-align: center;
-       width: 31%;
-      height: auto;
+      width: 31%;
 
 `;
 
 const Tomato = styled.img`
-       display: flex;
-       justify-content: center;
        align-items: center;
+       display: flex;
+       height: auto;
+       justify-content: center;
        margin: 0 auto;
        text-align: center;
-       width: 33%;
-      height: auto;
+      width: 33%;
 
 `;
 
 
 const Seeds1 = styled.img`
-        position: absolute;
+        align-items: center;
         clear: both;
-        left: 45%;
-        margin: 0 auto;
         display: flex;
         justify-content: center;
-        align-items: center;
+        left: 45%;
+        margin: 0 auto;
+        position: absolute;
         text-align: center;
         width: 12%;
         
 `;
 
 const Seeds2 = styled.img`
-        position: absolute;
+        align-items: center;
         clear: both;
+        display: flex;
+        height: auto;
+        justify-content: center;
         left: 43%;
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
         text-align: center;
         width: 12%;
-        height: auto;
 
 `;
 

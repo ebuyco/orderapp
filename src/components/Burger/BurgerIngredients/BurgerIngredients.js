@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Seeds1, Seeds2, BreadBottom, BreadTop, Meat, Salad, Cheese, Bacon }
+import { Seeds1, Seeds2, BreadBottom, BreadTop, Meat, Salad, Cheese, Tomato }
   from './BurgerIngredientsStyle';
 import { cheese, bunsUpper, bunsLower, pattyUpper, lettuceUpper, tomato, seeds1, seeds2 } from '../../../assets/svg';
 
@@ -31,8 +31,8 @@ class BurgerIngredient extends Component {
       case ('cheese'):
         ingredient = <Cheese src={cheese} />;
         break;
-      case ('bacon'):
-        ingredient = <Bacon src={tomato} />;
+      case ('tomato'):
+        ingredient = <Tomato src={tomato} />;
         break;
       default:
         ingredient = null;

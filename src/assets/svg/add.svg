@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="258px" viewBox="0 0 258 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>ios-add</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ios-add" fill="#FFFFFF">
+            <path d="M241.5,113 L145,113 L145,16.5 C145,7.7 137.8,0.5 129,0.5 C120.2,0.5 113,7.7 113,16.5 L113,113 L16.5,113 C7.7,113 0.5,120.2 0.5,129 C0.5,133.4 2.3,137.4 5.2,140.3 C8.1,143.2 12.1,145 16.5,145 L113,145 L113,241.5 C113,245.9 114.8,249.9 117.7,252.8 C120.6,255.7 124.6,257.5 129,257.5 C137.8,257.5 145,250.3 145,241.5 L145,145 L241.5,145 C250.3,145 257.5,137.8 257.5,129 C257.5,120.2 250.3,113 241.5,113 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

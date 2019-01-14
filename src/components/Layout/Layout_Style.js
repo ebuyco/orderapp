@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const LayoutStyle = styled.div`
-    margin-top: 16px;
+const ContentStyle = styled.div`
+      margin-top: 16px;
 `;
 
-export default LayoutStyle;
+export default ContentStyle;

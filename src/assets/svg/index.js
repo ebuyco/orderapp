@@ -9,7 +9,8 @@ import cheese from './cheese.svg';
 import lettuceUpper from './lettuce-green-upper.svg';
 import lettuceLower from './lettuce-lower.svg';
 import tomato from './tomato.svg';
+import add from './add.svg';
 
 
 export { cheese, bunsUpper, bunsLower, pattyLower, pattyUpper, lettuceUpper, lettuceLower, tomato,
-  seeds1, seeds2 };
+  seeds1, seeds2, add };

@@ -2,19 +2,19 @@ import styled from 'styled-components';
 
 const Head = styled.div`
     background-color: #00c5af;
-    font-weight: 400;
+    font-family:  'radnika_next', sans-serif;
     font-size: 1rem;
-    font-family:  'radnika_next', sans-serif;  
+    font-weight: 400;  
     height: 6vh;
    
     > h2 {
-    font-size: 2em;
     color: #fff;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+    font-size: 2em;
     font-weight: normal;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
      }
 `;
 
