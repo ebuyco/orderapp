@@ -409,8 +409,9 @@ module.exports = function (webpackEnv) {
               test: cssModuleRegex,
               use: getStyleLoaders({
                 importLoaders: 1,
-                sourceMap: isEnvProduction && shouldUseSourceMap,
                 modules: true,
+                localIdentName: '[name]_[local]_[hash:based64:5]',
+                sourceMap: isEnvProduction && shouldUseSourceMap,
                 getLocalIdent: getCSSModuleLocalIdent,
               }),
             },

@@ -5,7 +5,10 @@ import { BCStyle, BuildControlBtnMore, BuildControlBtnLess } from './BuildContro
 const BuildControl = props => (
   <BCStyle>
     <label>{props.label}</label>
-    <BuildControlBtnLess>Less</BuildControlBtnLess>
+    <BuildControlBtnLess
+      onClick={props.removed}
+      disabled={props.disabled}
+    >Less</BuildControlBtnLess>
     <BuildControlBtnMore
       onClick={props.added}
     >More</BuildControlBtnMore>

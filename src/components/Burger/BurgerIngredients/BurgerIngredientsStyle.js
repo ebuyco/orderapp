@@ -7,7 +7,7 @@ const BreadTop = styled.img`
        justify-content: center;
        margin: 0 auto;
        text-align: center;
-       width: 25%;
+       width: 15%;
       
 `;
 
@@ -18,7 +18,7 @@ const BreadBottom = styled.img`
        justify-content: center;
        margin: 0 auto;
        text-align: center;
-       width: 25%;
+       width: 15%;
    `;
 
 const Cheese = styled.img`
@@ -28,7 +28,7 @@ const Cheese = styled.img`
        justify-content: center;
        margin: 0 auto;
        text-align: center;
-       width: 31%;
+       width: 15%;
           
 `;
 
@@ -39,7 +39,7 @@ const Meat = styled.img`
        justify-content: center;
        margin: 0 auto;
        text-align: center;
-       width: 31%;
+       width: 15%;
     
 
 `;
@@ -52,7 +52,7 @@ const Salad = styled.img`
        text-align: center;
        img {
         height: auto;
-        width: 40%;
+        width: 15%;
        }
    
 
@@ -65,7 +65,7 @@ const Tomato = styled.img`
        justify-content: center;
        margin: 0 auto;
        text-align: center;
-       width: 33%;
+       width: 15%;
    
 `;
 

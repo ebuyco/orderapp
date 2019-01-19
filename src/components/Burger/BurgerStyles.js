@@ -25,8 +25,8 @@ const BurgerStyles = styled.div`
 `;
 
 const MessageStyle = styled.p`
-        font-family: 'Montserrat-Medium',
-        font-size: 2rem;
+        font-family: 'Montserrat-Medium';
+        font-size: 1.5rem;
 `;
 
 export { BurgerStyles, MessageStyle };

@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: 'Montserrat', sans-serif;
   src: url('./assets/fonts/Montserrat-Regular.ttf, Montserrat-Bold.ttf, 
-  Montserrat-SemiBold.ttf, Montserrat-Light.ttf, Montserrat-Medium, Montserrat-Semibold') format("truetype");
+  Montserrat-ExtraBold.ttf,Montserrat-SemiBold.ttf, Montserrat-Light.ttf, Montserrat-Medium, Montserrat-Black') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,6 +17,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  background-color: #F7F8FC;
   padding: 0;
   margin: 0;
   font-size: 1.5rem;
@@ -27,5 +28,6 @@ body {
 
 button {  font-family:'Montserrat', sans-serif; }
 `;
+
 
 export default GlobalStyle;

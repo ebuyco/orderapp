@@ -38,13 +38,13 @@ const BuildControlBtnLess = styled.button`
         cursor: pointer;
    }
      &[disabled] {
-        background-color: #AC9980;
-        border: 1px solid #7E7365;
+        background-color: #FF5722;
+        border: 1px solid #FFA32A;
         color: #ccc;
         cursor: default;
         }
      &:active {
-        background-color: #99703F;
+        background-color: #FF7C01;
         color: white;
      }   
    

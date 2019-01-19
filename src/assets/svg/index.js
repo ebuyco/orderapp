@@ -10,7 +10,16 @@ import lettuceUpper from './lettuce-green-upper.svg';
 import lettuceLower from './lettuce-lower.svg';
 import tomato from './tomato.svg';
 import add from './add.svg';
-
+import burgericon from './burger-icon.svg';
+import DeliveryBoy from './delivery.svg';
+import About from './about.svg';
+import LogoIcon from './logo.svg';
+import DashboardIcon from './DashboardIcon.svg';
+import Build from './Build.svg';
+import Cart from './Cart.svg';
+import Menu from './Menu.svg';
+import Chevron from './DowArrow.svg';
 
 export { cheese, bunsUpper, bunsLower, pattyLower, pattyUpper, lettuceUpper, lettuceLower, tomato,
-  seeds1, seeds2, add };
+  seeds1, seeds2, add, burgericon, DeliveryBoy, About, LogoIcon,
+  DashboardIcon, Build, Cart, Menu, Chevron };
