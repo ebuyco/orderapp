@@ -5,8 +5,8 @@ import { DashboardIcon, Build, Cart } from '../../../../../assets/svg';
 
 const NavigationItems = () => (
   <NItemsStyles>
-    <NavigationItem link='/' active><ImgIcons src={DashboardIcon} />Dashboard<LabelBlack>8</LabelBlack></NavigationItem>
-    <NavigationItem link='/'><ImgIcons src={Build} />Burger Builder</NavigationItem>
+    <NavigationItem link='/'><ImgIcons src={DashboardIcon} />Dashboard<LabelBlack>8</LabelBlack></NavigationItem>
+    <NavigationItem link='/' active><ImgIcons src={Build} />Burger Builder</NavigationItem>
     <NavigationItem link='/'><ImgIcons src={Cart} />Checkout</NavigationItem>
   </NItemsStyles>
 

@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 const LogoStyle = styled.div`
     box-sizing: border-box;
+    display: flex;
     height: 100%;
     padding: 1rem;
-    img{
+    img {
         align-items: center;
         display: flex;
         height: 100%;

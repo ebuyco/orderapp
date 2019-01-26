@@ -13,7 +13,7 @@ const ToolbarStyle = styled.header`
     padding: 0 20px;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 90;
     &:before {
         content: '';

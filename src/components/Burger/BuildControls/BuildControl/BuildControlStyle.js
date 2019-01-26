@@ -48,6 +48,9 @@ const BuildControlBtnLess = styled.button`
         color: white;
      }   
    
+   @media(max-width: 414px){
+       width: 20%;
+   }
 `;
 
 const BuildControlBtnMore = styled.button`
@@ -80,6 +83,9 @@ const BuildControlBtnMore = styled.button`
         background-color: #3852FE;
         color: white;
      }   
+     @media(max-width: 414px){
+       width: 20%;
+   }
    
 `;
 

@@ -47,15 +47,13 @@ const Meat = styled.img`
 const Salad = styled.img`
        align-items: center;
        display: flex;
+       height: auto;
        justify-content: center;
        margin: 0 auto;
        text-align: center;
-       img {
-        height: auto;
-        width: 15%;
-       }
-   
-
+       width: 15%;
+     
+     
 `;
 
 const Tomato = styled.img`

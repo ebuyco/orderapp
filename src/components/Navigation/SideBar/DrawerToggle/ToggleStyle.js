@@ -1,11 +1,22 @@
 import styled from 'styled-components';
 
 const ToggleStyle = styled.div`
-    img {
+   align-items: flex-start;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: flex-start;
+   left: 1rem;
+   position: relative;
+   top: -17px;
+   img {
         cursor: pointer;
         display: flex;
+        left: 0;
+        min-width: 5rem;
         padding: 0.5rem;
-        width: 10%;
+        position: absolute;
+        top: 0;
+        width: 100%;
         &:hover {
             color: '#212348';
        }
