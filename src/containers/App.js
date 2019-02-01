@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import { Global } from '../styles';
 import Layout from '../hoc/Layout/Layout';
 import BurgerBuilder from './BurgerBuilder/BurgerBuilder';
+import Checkout from './Checkout/Checkout';
 
 class App extends Component {
   render() {
@@ -9,7 +11,17 @@ class App extends Component {
       <div className='App'>
         <Global />
         <Layout>
-          <BurgerBuilder />
+          <Switch>
+            <Route
+              path='/checkout'
+              component={Checkout}
+            />
+            <Route
+              exact
+              path='/'
+              component={BurgerBuilder}
+            />
+          </Switch>
         </Layout>
       </div>
     );

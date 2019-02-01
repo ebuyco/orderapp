@@ -19,7 +19,8 @@ import Build from './Build.svg';
 import Cart from './Cart.svg';
 import Menu from './Menu.svg';
 import Chevron from './DowArrow.svg';
+import Menuburger from './Menu_Burger.svg';
 
 export { cheese, bunsUpper, bunsLower, pattyLower, pattyUpper, lettuceUpper, lettuceLower, tomato,
   seeds1, seeds2, add, burgericon, DeliveryBoy, About, LogoIcon,
-  DashboardIcon, Build, Cart, Menu, Chevron };
+  DashboardIcon, Build, Cart, Menu, Chevron, Menuburger };

@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 const Spinner = styled.div`
     -ms-transform: translateZ(0);
-  -webkit-animation: load4 1.3s infinite linear;
+    -webkit-animation: load4 1.3s infinite linear;
   -webkit-transform: translateZ(0);
   animation: load4 1.3s infinite linear;
   border-radius: 50%;
   color: #5a70fe;
   font-size: 20px;
   height: 1em;
-  margin: 100px auto;
+  margin: 30rem auto;
   position: relative;
   text-indent: -9999em;
   transform: translateZ(0);
