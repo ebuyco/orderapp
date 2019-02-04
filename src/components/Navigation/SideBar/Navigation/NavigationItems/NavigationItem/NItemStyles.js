@@ -18,7 +18,7 @@ const NItemStyles = styled.li`
             margin: 0 auto;
             padding: 16px 10px;
             text-decoration: none;
-  
+
             &.active {
                 background-color: #3751FE;
                 border-left: 0.2rem solid #FFFFFF;
@@ -33,20 +33,20 @@ const NItemStyles = styled.li`
                 border-left: 0.2rem solid #FFFFFF;
                 color: #ffffff;
             }
-           
-        }      
-      
+
+        }
+
 
   `;
 
 const NItemActive = styled.a`
-        .active{
+        /* .active{
             &:active {
                 background-color: #3751FE;
                 border-left: 4px solid #40A4C8;
                 color: #ffffff;
             }
-        }
-   
+        } */
+
 `;
 export { NItemActive, NItemStyles };

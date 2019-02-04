@@ -8,7 +8,8 @@ import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 import axios from '../../axios-order';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
-import Paragraph from '../../styles/Paragraph';
+import { LoadedImage } from '../../assets/svg';
+import BurgerBuilderStyle from './BurgerBuilderStyle';
 
 const INGREDIENT_PRICES = {
   salad: 0.5,
@@ -89,7 +90,6 @@ class BurgerBuilder extends Component {
 
     purchaseContinueHandler = () => {
         // alert('You continue!');
-
         const queryParams = [];
         for (let i in this.state.ingredients) {
               queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
@@ -110,7 +110,7 @@ class BurgerBuilder extends Component {
         disabledInfo[key] = disabledInfo[key] <= 0;
       }
       let orderSummary = null;
-      let burger = this.state.error ? <Paragraph>Ingredients cannot loaded !!</Paragraph> : <Spinner/>;
+      let burger = this.state.error ? <BurgerBuilderStyle><img src={LoadedImage} alt="image_cannot_load" /></BurgerBuilderStyle> : <Spinner/>;
 
       if(this.state.ingredients){
       burger =  (

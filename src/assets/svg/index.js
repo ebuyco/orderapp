@@ -20,7 +20,8 @@ import Cart from './Cart.svg';
 import Menu from './Menu.svg';
 import Chevron from './DowArrow.svg';
 import Menuburger from './Menu_Burger.svg';
+import LoadedImage from './ingredientsloaded.svg';
 
 export { cheese, bunsUpper, bunsLower, pattyLower, pattyUpper, lettuceUpper, lettuceLower, tomato,
   seeds1, seeds2, add, burgericon, DeliveryBoy, About, LogoIcon,
-  DashboardIcon, Build, Cart, Menu, Chevron, Menuburger };
+  DashboardIcon, Build, Cart, Menu, Chevron, Menuburger, LoadedImage };

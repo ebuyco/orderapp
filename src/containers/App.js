@@ -4,6 +4,7 @@ import { Global } from '../styles';
 import Layout from '../hoc/Layout/Layout';
 import BurgerBuilder from './BurgerBuilder/BurgerBuilder';
 import Checkout from './Checkout/Checkout';
+import Orders from './Orders/Orders';
 
 class App extends Component {
   render() {
@@ -15,6 +16,10 @@ class App extends Component {
             <Route
               path='/checkout'
               component={Checkout}
+            />
+            <Route
+              path='/orders'
+              component={Orders}
             />
             <Route
               exact

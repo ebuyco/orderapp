@@ -12,7 +12,7 @@ const LogoStyle = styled.div`
         justify-content: center;
         margin: 0 auto;
         text-align:center;
-        width: 40%;
+        width: 25%;
 
     }
 `;
