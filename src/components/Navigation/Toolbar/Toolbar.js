@@ -12,7 +12,7 @@ const Toolbar = props => (
     />
     <Link
       to='/'
-      exact
+      // exact
     >
       <Logo />
     </Link>

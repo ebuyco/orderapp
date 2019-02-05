@@ -3,6 +3,7 @@ import Order from '../../components/Order/Order';
 import axios from '../../axios-order';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
+
 class Orders extends Component {
   state = {
     orders: [],
@@ -35,6 +36,7 @@ class Orders extends Component {
              ingredients={order.ingredients}
               price={order.price}
             />
+
         )
         )}
       </div>

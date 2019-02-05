@@ -1,5 +1,6 @@
 import React from 'react';
 import OrderWrapper from './OrderStyle';
+import { Orders } from '../../assets/svg';
 
 const Order = (props) => {
   const ingredients = [];
@@ -11,11 +12,12 @@ const Order = (props) => {
     });
   }
   const ingredientsOutput = ingredients.map(ig => (
-    <span key={ig.name}>{ig.name} ({ig.amount})
-    </span>
+    <label key={ig.name}> {ig.name} ({ig.amount})
+    </label>
   ));
   return (
     <OrderWrapper>
+      <img src={Orders} alt='name' />
       <p>Ingredients: {ingredientsOutput}</p>
       <p>Price: <strong>USD {Number.parseFloat(props.price).toFixed(2)}</strong></p>
     </OrderWrapper>
