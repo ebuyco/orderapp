@@ -2,14 +2,67 @@ import React, { Component } from 'react';
 import { CDWrapper, CDForm } from './CDStyle';
 import axios from '../../../axios-order';
 import Spinner from '../../../components/UI/Spinner/Spinner';
+import Input from '../../../components/UI/Input/Input';
 
 class ContactData extends Component {
   state = {
-    name: '',
-    email: '',
-    address: {
-      street: '',
-      postalCode: ''
+    orderForm: {
+      name: {
+        elementType: 'input',
+        elementConfig: {
+          type: 'text',
+          placeholder: 'Your Name'
+        },
+        value: ''
+      },
+      street: {
+        elementType: 'input',
+        elementConfig: {
+          type: 'text',
+          placeholder: 'Street'
+        },
+        value: ''
+      },
+      zipCode: {
+        elementType: 'input',
+        elementConfig: {
+          type: 'text',
+          placeholder: 'ZIP CODE'
+        },
+        value: ''
+      },
+      country: {
+        elementType: 'input',
+        elementConfig: {
+          type: 'text',
+          placeholder: 'Country'
+        },
+        value: ''
+      },
+      email: {
+        elementType: 'input',
+        elementConfig: {
+          type: 'email',
+          placeholder: 'email@addreesscom.'
+        },
+        value: ''
+      },
+      deliveryMethod: {
+        elementType: 'select',
+        elementConfig: {
+          options: [
+            {
+              value: 'fastest',
+              displayValue: 'Fastest'
+            },
+            {
+              value: 'cheapest',
+              displayValue: 'Cheapest'
+            }
+          ]
+        },
+        value: ''
+      }
     },
     loading: false
   }
@@ -19,17 +72,8 @@ class ContactData extends Component {
     this.setState({ loading: true });
     const order = {
       ingredients: this.props.ingredients,
-      price: this.props.price,
-      customer: {
-        name: 'Ernie Buyco',
-        address: {
-          street: 'Teststreet 1',
-          zipCode: '41351',
-          country: 'Philippines'
-        },
-        email: 'test@gmail.com'
-      },
-      deliveryMethod: 'fastest'
+      price: this.props.price
+
     };
     /*eslint-disable*/
     axios.post('/orders.json', order)
@@ -43,30 +87,29 @@ class ContactData extends Component {
       /*eslint-disable*/
   }
 
+    inputChangedHandler = (event) => {
+        console.log(event.target.value);
+    }
   render() {
   /*eslint-disable*/
+    const formElementsArray = [];
+    for ( let key in this.state.orderForm){
+        formElementsArray.push({
+            id:key,
+            config: this.state.orderForm[key]
+        });
+    }
     let form = (
       <CDForm>
-      <input
-        type='text'
-        name='name'
-        placeholder='Your Name'
-      />
-      <input
-        type='email'
-        name='name'
-        placeholder='Your Email Address'
-      />
-      <input
-        type='text'
-        name='street'
-        placeholder='Street Address'
-      />
-      <input
-        type='text'
-        name='postal'
-        placeholder='Postal Code'
-      />
+      {formElementsArray.map(formElement => (
+          <Input
+          key={formElement.config.id}
+          elementType={formElement.config.elementType}
+          elementConfig={formElement.config.elementConfig}
+          value={formElement.config.value}
+          changed={this.inputChangedHandler}
+          />
+      ))}
       <button
         type='submit'
         onClick={this.orderHandler}

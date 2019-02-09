@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 const NItemsStyles = styled.ul`
-        font-family:Montserrat-Medium;
+       font-family: inherit;
         height: 100%;
         list-style: none;
         margin: 0;
@@ -20,7 +20,7 @@ const ImgIcons = styled.img`
 const LabelBlack = styled.span`
         background-color: #464751;
         border-radius: 0.9rem;
-        font-family: Montserrat-Regular;
+        font-family: inherit;
         font-size: 1rem;
         margin-top: -33px;
         right: 2rem;
@@ -31,7 +31,8 @@ const LabelBlack = styled.span`
 const LabelYellow = styled.span`
         background-color: #FFC107;
         border-radius: 0.9rem;
-        font-family: Montserrat-Regular;
+        font-family: inherit;
+        font-family: inherit;
         font-size: 1rem;
         margin-top: -33px;
         right: 2rem;

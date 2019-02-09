@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="401px" viewBox="0 0 320 401" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>ios-notifications</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ios-notifications" fill="#5A6FFE" fill-rule="nonzero">
+            <path d="M159.9,401 C191,401 208,379 208,348 L111.7,348 C111.7,379 128.7,401 159.9,401 Z M316,297.2 C300.6,276.9 270.3,265 270.3,174.1 C270.3,80.8 229.1,43.3 190.7,34.3 C187.1,33.4 184.5,32.2 184.5,28.4 L184.5,25.5 C184.5,12.1 173.5,0.8 160.1,0.9 C146.7,0.7 135.7,12.1 135.7,25.5 L135.7,28.4 C135.7,32.1 133.1,33.4 129.5,34.3 C91,43.4 49.9,80.8 49.9,174.1 C49.9,265 19.6,276.8 4.2,297.2 C-5.7,310.3 3.7,329 20.1,329 L300.2,329 C316.5,329 325.9,310.2 316,297.2 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

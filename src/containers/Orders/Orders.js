@@ -3,18 +3,18 @@ import Order from '../../components/Order/Order';
 import axios from '../../axios-order';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
-
 class Orders extends Component {
   state = {
     orders: [],
     loading: true
   }
 
+  /*eslint-disable*/
   componentDidMount() {
     axios.get('/orders.json')
       .then((res) => {
         const fetchedOrders = [];
-        for (const key in res.data) {
+        for (let key in res.data) {
           fetchedOrders.push({
             ...res.data[key],
             id: key
@@ -35,8 +35,7 @@ class Orders extends Component {
             <Order key={order.id}
              ingredients={order.ingredients}
               price={order.price}
-            />
-
+           />
         )
         )}
       </div>

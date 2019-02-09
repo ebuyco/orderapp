@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const NItemStyles = styled.li`
         box-sizing: border-box;
-        font-family:Montserrat-Medium;
+        font-family: inherit;
         height: 100%;
         margin: 0;
         width: 100%;

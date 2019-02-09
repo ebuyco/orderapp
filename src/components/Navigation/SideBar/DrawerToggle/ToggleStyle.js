@@ -4,6 +4,7 @@ const ToggleStyle = styled.div`
    align-items: flex-start;
    box-sizing: border-box;
    display: flex;
+   font-family: inherit;
    justify-content: flex-start;
    left: 1rem;
    position: relative;

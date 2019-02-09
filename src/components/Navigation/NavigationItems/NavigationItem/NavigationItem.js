@@ -3,10 +3,12 @@ import { NItemActive, NItemStyles } from './NItemStyles';
 
 const NavigationItem = props => (
   <NItemStyles>
-    <NItemActive
+    {/* <NItemActive
       href={props.link}
       className={props.active ? 'active' : null}
     >
+      {props.children}</NItemActive> */}
+    <NItemActive>
       {props.children}</NItemActive>
   </NItemStyles>
 );

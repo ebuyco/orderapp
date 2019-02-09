@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const NItemsStyles = styled.ul`
         align-items: center;
         display: flex;
-        flex-grow: row;     
+        flex-grow: row;
+        font-family: inherit;
         height: 100%;
         left:0;
         list-style: none;
@@ -13,9 +14,19 @@ const NItemsStyles = styled.ul`
         position: relative;
         top: 0;
       @media(min-width: 500px){
-         flex-grow: column;     
-      }  
+         flex-grow: column;
+      }
+        img {
+        cursor: pointer;
+        }
 `;
 
-
-export default NItemsStyles;
+const ChevronStyle = styled.a`
+      &.open {
+        display: block;
+      }
+      &.close {
+          display: none;
+      }
+`;
+export { NItemsStyles, ChevronStyle };

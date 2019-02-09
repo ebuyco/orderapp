@@ -29,4 +29,28 @@ const MessageStyle = styled.p`
         font-size: 1.5rem;
 `;
 
-export { BurgerStyles, MessageStyle };
+const Message = styled.div`
+          background-color: #FFC107;
+          color: #ffffff;
+`;
+
+const Closed = styled.button`
+            background: white;
+            border: 0;
+            color: #3f4042;
+            cursor: pointer;
+            font-family:Montserrat-ExtraBold;
+            font-size: 1.3rem;
+            font-size: 3rem;
+            position: absolute;
+            right: 0;
+            top: 1rem;
+            z-index: 2;
+            &:hover{
+                color: #252424;
+            }
+            &:focus {
+                outline: none;
+            }
+`;
+export { BurgerStyles, MessageStyle, Message, Closed };

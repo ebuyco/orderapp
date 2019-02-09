@@ -7,8 +7,9 @@ const ToolbarStyle = styled.header`
     box-shadow: 0px -20px 20px 20px #d2cfcf;
     box-sizing: border-box;
     display: flex;
+    font-family: inherit;
     height: 56px;
-    justify-content: space-between; 
+    justify-content: space-between;
     left: 0;
     padding: 0 20px;
     position: fixed;

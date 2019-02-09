@@ -9,16 +9,13 @@ const NavigationItem = props => (
       className={props.active ? 'active' : null}
     >
       {props.children}</NItemActive> */}
-
     <NavLink
       to={props.link}
       exact={props.exact}
-      activeClassName='active'
+      // activeClassName='active'
     >
       {props.children}
     </NavLink>
-
-
   </NItemStyles>
 );
 

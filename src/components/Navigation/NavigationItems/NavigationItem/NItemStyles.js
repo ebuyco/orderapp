@@ -70,6 +70,7 @@ import styled from 'styled-components';
 const NItemStyles = styled.li`
         box-sizing: border-box;
         display: inline-block;
+        font-family: inherit;
         margin: 10px 0;
         width: 100%;
         a {
@@ -77,7 +78,8 @@ const NItemStyles = styled.li`
             display: flex;
             text-decoration: none;
             width: 100%;
-         
+            font-family: inherit;
+
             }
             img {
                 float: right;
@@ -86,7 +88,7 @@ const NItemStyles = styled.li`
                 position: absolute;
                 top: 25px;
                 width: 100%;
-            }
+
         }
 
         @media (min-width: 500px ) {
@@ -100,7 +102,7 @@ const NItemStyles = styled.li`
                 height: 100%;
                 padding: 16px 10px;
                 border-bottom: 4px solid transparent;
-               
+
             }
 
         }
@@ -114,8 +116,11 @@ const NItemActive = styled.a`
                 background-color: #3751FE;
                 border-bottom: 4px solid #40A4C8;
                 color: #ffffff;
+                font-family: inherit;
             }
         }
-   
+
 `;
+
+
 export { NItemActive, NItemStyles };

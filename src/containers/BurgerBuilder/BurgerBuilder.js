@@ -115,7 +115,9 @@ class BurgerBuilder extends Component {
       if(this.state.ingredients){
       burger =  (
         <Aux>
-            <Burger ingredients={this.state.ingredients} />
+            <Burger
+            ingredients={this.state.ingredients}
+             />
               <BuildControls
                     ingredientAdded={this.addIngredientHandler}
                     ingredientRemoved={this.removeIngredientHandler}

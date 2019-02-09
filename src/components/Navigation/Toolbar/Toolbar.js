@@ -16,9 +16,10 @@ const Toolbar = props => (
     >
       <Logo />
     </Link>
-
     <NavStyle>
-      <NavigationItems />
+      <NavigationItems
+        clicked={props.chevronToggleClicked}
+      />
     </NavStyle>
   </ToolbarStyle>
 );

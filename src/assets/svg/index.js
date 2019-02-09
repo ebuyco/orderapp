@@ -22,8 +22,19 @@ import Chevron from './DowArrow.svg';
 import Menuburger from './Menu_Burger.svg';
 import LoadedImage from './ingredientsloaded.svg';
 import Orders from './order.svg';
+import Network from './network.svg';
+import Footer1 from './footer-1.svg';
+import Notification from './notification-bell.svg';
+import Facebook from './facebook.svg';
+import Github from './github.svg';
+import Instagram from './instagram.svg';
+import Footer2 from './footer-2.svg';
+import Linkedin from './linkedin.svg';
+import Gplus from './gplus.svg';
+import Skype from './skype.svg';
 
 export { cheese, bunsUpper, bunsLower, pattyLower, pattyUpper, lettuceUpper, lettuceLower, tomato,
   seeds1, seeds2, add, burgericon, DeliveryBoy, About, LogoIcon,
   DashboardIcon, Build, Cart, Menu, Chevron,
-  Menuburger, LoadedImage, Orders };
+  Menuburger, LoadedImage, Orders, Network, Footer1, Notification, Facebook, Github,
+  Instagram, Footer2, Linkedin, Gplus, Skype };

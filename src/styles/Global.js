@@ -4,8 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: 'Montserrat', sans-serif;
-  src: url('./assets/fonts/Montserrat-Regular.ttf, Montserrat-Bold.ttf, 
-  Montserrat-ExtraBold.ttf,Montserrat-SemiBold.ttf, Montserrat-Light.ttf, Montserrat-Medium, Montserrat-Black') format("truetype");
+  src: url('./assets/fonts/Montserrat-Regular.ttf, Montserrat-Bold.ttf, Montserrat-ExtraBold.ttf,Montserrat-SemiBold.ttf, Montserrat-Light.ttf, Montserrat-Medium.ttf, Montserrat-Black.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +22,8 @@ body {
   font-size: 1.5rem;
   line-height: 2;
   font-family: 'Montserrat', sans-serif;
- 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 button {  font-family:'Montserrat', sans-serif; }

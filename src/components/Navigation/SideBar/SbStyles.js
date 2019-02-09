@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const SbStyles = styled.aside`
     background-color: #5A6FFE;
     box-sizing: border-box;
+    font-family: inherit;
     height: 100%;
     left: 0;
     max-width: 100%;
@@ -26,6 +27,7 @@ const SbStyles = styled.aside`
 
 const LogoSidebar = styled.div`
         box-sizing: border-box;
+        font-family: inherit;
         height: auto;
         padding: 1rem;
         img{

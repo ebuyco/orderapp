@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Modal from '../../components/UI/Modal/Modal';
 import Aux from '../Aux/Aux';
-
+import ErrorStyle from './ErrorStyle';
+import { Network } from '../../assets/svg';
 
 const withErrorHandler = (WrapperComponent, axios) => class extends Component {
         state = {
@@ -34,7 +35,7 @@ const withErrorHandler = (WrapperComponent, axios) => class extends Component {
                 show={this.state.error}
                 modalClosed={this.errorConfirmedHandler}
               >
-                {this.state.error ? this.state.error.message : null}
+                <ErrorStyle><img src={Network} alt='name_network' />{this.state.error ? this.state.error.message : null}</ErrorStyle>
               </Modal>
               <WrapperComponent {...this.props} />
             </Aux>

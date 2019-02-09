@@ -5,7 +5,8 @@ import { Orders } from '../../assets/svg';
 const Order = (props) => {
   const ingredients = [];
 
-  for (const ingredientName in props.ingredients) {
+/*eslint-disable*/
+  for (let ingredientName in props.ingredients) {
     ingredients.push({
       name: ingredientName,
       amount: props.ingredients[ingredientName]
