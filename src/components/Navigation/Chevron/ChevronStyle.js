@@ -17,6 +17,17 @@ const ChevronWrapper = styled.div`
     text-align: center;
     width: 20%;
     z-index: 400;
+    &:after{
+      content: "";
+      display: inline-block;
+      position: absolute;
+      border: 8px solid transparent;
+      border-bottom-color: #fff;
+      left: auto;
+      right: auto;
+      top: -14px;
+
+    }
     hr {
         border: 1px solid #8e8989;
         width: 100%;

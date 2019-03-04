@@ -25,7 +25,7 @@ const BurgerStyles = styled.div`
 `;
 
 const MessageStyle = styled.p`
-        font-family: 'Montserrat-Medium';
+        font-family:inherit;
         font-size: 1.5rem;
 `;
 
@@ -39,7 +39,7 @@ const Closed = styled.button`
             border: 0;
             color: #3f4042;
             cursor: pointer;
-            font-family:Montserrat-ExtraBold;
+            font-family:inherit;
             font-size: 1.3rem;
             font-size: 3rem;
             position: absolute;

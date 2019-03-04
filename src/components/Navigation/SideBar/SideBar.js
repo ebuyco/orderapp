@@ -10,6 +10,7 @@ const SideBars = (props) => {
   if (props.open) {
     attachedClasses = [props.Open ? 'Open' : 'Open'];
   }
+  console.log(attachedClasses);
   return (
     <Aux>
       <Backdrop

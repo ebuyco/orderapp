@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 const ToggleStyle = styled.div`
    align-items: flex-start;
    box-sizing: border-box;
@@ -21,7 +22,14 @@ const ToggleStyle = styled.div`
         &:hover {
             color: '#212348';
        }
+       &.Open {
+        background-image: url(../../../../assets/svg/build.svg) no-repeat center;
+       }
+       &.Close {
+        background-image: url(../../../../assets/svg/build.svg) no-repeat center;
+       }
     }
 `;
+
 
 export default ToggleStyle;

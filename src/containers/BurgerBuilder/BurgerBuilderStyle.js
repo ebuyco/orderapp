@@ -8,6 +8,7 @@ const BurgerBuilderStyle = styled.div`
           height: auto;
           justify-content: center;
           margin: 0 auto;
+          margin-top: 4rem;
           text-align:center;
           width: 80%;
     }

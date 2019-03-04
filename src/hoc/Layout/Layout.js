@@ -16,19 +16,20 @@ class Layout extends Component {
     this.setState({ showSideBar: false });
   }
 
+  sideDrawerToggleHandler = () => {
+    this.setState(prevState => ({ showSideBar: !prevState.showSideBar }
+    ));
+  }
+
   chevronCloseHandler = () => {
     this.setState({ showChevron: false });
   }
-
-   sideDrawerToggleHandler = () => {
-     this.setState(prevState => ({ showSideBar: !prevState.showSideBar }
-     ));
-   }
 
    chevronToggleHandler = () => {
      this.setState(prevState => ({ showChevron: !prevState.showChevron }
      ));
    }
+
 
    render() {
      return (

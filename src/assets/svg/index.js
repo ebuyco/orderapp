@@ -32,9 +32,11 @@ import Footer2 from './footer-2.svg';
 import Linkedin from './linkedin.svg';
 import Gplus from './gplus.svg';
 import Skype from './skype.svg';
+import UpperRegister from './upperRegister.svg';
+import ImgRegisterLower from './LowerRegister.svg';
 
 export { cheese, bunsUpper, bunsLower, pattyLower, pattyUpper, lettuceUpper, lettuceLower, tomato,
   seeds1, seeds2, add, burgericon, DeliveryBoy, About, LogoIcon,
   DashboardIcon, Build, Cart, Menu, Chevron,
   Menuburger, LoadedImage, Orders, Network, Footer1, Notification, Facebook, Github,
-  Instagram, Footer2, Linkedin, Gplus, Skype };
+  Instagram, Footer2, Linkedin, Gplus, Skype, UpperRegister, ImgRegisterLower };

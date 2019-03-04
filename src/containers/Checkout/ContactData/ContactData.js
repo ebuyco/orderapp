@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { CDWrapper, CDForm } from './CDStyle';
+import { CDWrapper, CDForm, ImgRegister, RegisterLower } from './CDStyle';
 import axios from '../../../axios-order';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import Input from '../../../components/UI/Input/Input';
+import { UpperRegister, ImgRegisterLower } from '../../../assets/svg';
+import Button from '../../../components/UI/Input/Button';
 
 class ContactData extends Component {
   state = {
@@ -13,7 +15,12 @@ class ContactData extends Component {
           type: 'text',
           placeholder: 'Your Name'
         },
-        value: ''
+        value: '',
+        validation: {
+          required: true
+        },
+        valid: false,
+        touched: false
       },
       street: {
         elementType: 'input',
@@ -21,7 +28,12 @@ class ContactData extends Component {
           type: 'text',
           placeholder: 'Street'
         },
-        value: ''
+        value: '',
+        validation: {
+          required: true
+        },
+        valid: false,
+        touched: false
       },
       zipCode: {
         elementType: 'input',
@@ -29,7 +41,15 @@ class ContactData extends Component {
           type: 'text',
           placeholder: 'ZIP CODE'
         },
-        value: ''
+        value: '',
+        validation: {
+          required: true,
+          minLength: 5,
+          maxLength: 5,
+          isNumeric: true
+        },
+        valid: false,
+        touched: false
       },
       country: {
         elementType: 'input',
@@ -37,15 +57,26 @@ class ContactData extends Component {
           type: 'text',
           placeholder: 'Country'
         },
-        value: ''
+        value: '',
+        validation: {
+          required: true
+        },
+        valid: false,
+        touched: false
       },
       email: {
         elementType: 'input',
         elementConfig: {
           type: 'email',
-          placeholder: 'email@addreesscom.'
+          placeholder: 'email@address.com.'
         },
-        value: ''
+        value: '',
+        validation: {
+          required: true,
+          isEmail: true
+        },
+        valid: false,
+        touched: false
       },
       deliveryMethod: {
         elementType: 'select',
@@ -61,19 +92,28 @@ class ContactData extends Component {
             }
           ]
         },
-        value: ''
+        value: '',
+        validation: 'fastest',
+        valid: true
       }
     },
+    formIsValid: false,
     loading: false
   }
 
   orderHandler = (event) => {
     event.preventDefault();
     this.setState({ loading: true });
+    const formData = {};
+    /*eslint-disable*/
+    for (let formElementIdentifier in this.state.orderForm) {
+      formData[formElementIdentifier] = this.state.orderForm[formElementIdentifier].value;
+    }
+      /*eslint-disable*/
     const order = {
       ingredients: this.props.ingredients,
-      price: this.props.price
-
+      price: this.props.price,
+      orderData: formData
     };
     /*eslint-disable*/
     axios.post('/orders.json', order)
@@ -87,33 +127,96 @@ class ContactData extends Component {
       /*eslint-disable*/
   }
 
-    inputChangedHandler = (event) => {
-        console.log(event.target.value);
+    checkValidity = (value, rules) => {
+          /*eslint-disable*/
+        let isValid = true;
+           /*eslint-disable*/
+           if(!rules) {
+             return true;
+           }
+
+        if (rules.required) {
+          isValid = value.trim() !== '' && isValid;
+        }
+
+        if (rules.minLength){
+          isValid = value.length >= rules.minLength && isValid;
+        }
+
+        if (rules.maxLength) {
+          isValid = value.length <= rules.maxLength && isValid;
+        }
+
+        if (rules.isEmail) {
+          const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+          isValid = pattern.test(value) && isValid
+        }
+
+        if (rules.isNumeric) {
+          const pattern = /^\d+$/;
+          isValid = pattern.test(value) && isValid
+        }
+
+        return isValid;
     }
+
+    inputChangedHandler = (event, inputIdentifier) => {
+       const updatedOrderForm = {
+              ...this.state.orderForm
+       }
+       const updatedFormElement = {
+         ...updatedOrderForm[inputIdentifier]
+        };
+        updatedFormElement.value = event.target.value;
+        updatedFormElement.touched = true;
+        updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.validation)
+        console.log(updatedFormElement);
+        updatedOrderForm[inputIdentifier] = updatedFormElement;
+
+        /*eslint-disable*/
+        let formIsValid = true;
+        for (let inputIdentifier in updatedOrderForm) {
+          formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
+        }
+         /*eslint-disable*/
+
+        this.setState({orderForm: updatedOrderForm, formIsValid: formIsValid});
+    }
+
   render() {
   /*eslint-disable*/
     const formElementsArray = [];
     for ( let key in this.state.orderForm){
         formElementsArray.push({
-            id:key,
+            id: key,
             config: this.state.orderForm[key]
         });
     }
     let form = (
-      <CDForm>
+      <CDForm  onSubmit={this.orderHandler}>
+         <ImgRegister>
+          <img src={UpperRegister} alt='upper_data'/>
+        </ImgRegister>
       {formElementsArray.map(formElement => (
           <Input
-          key={formElement.config.id}
+          key={formElement.id}
           elementType={formElement.config.elementType}
           elementConfig={formElement.config.elementConfig}
           value={formElement.config.value}
-          changed={this.inputChangedHandler}
+          invalid={!formElement.config.valid}
+          shouldValidate={formElement.config.validation}
+          touched ={formElement.config.touched}
+          changed={(event) => this.inputChangedHandler(event, formElement.id)}
           />
       ))}
-      <button
+      <Button
         type='submit'
-        onClick={this.orderHandler}
-      >Order</button>
+        // onClick={this.orderHandler}
+        disabled={!this.state.formIsValid}
+      >Order</Button>
+        <RegisterLower>
+          <img src={ImgRegisterLower} alt='upper_data'/>
+        </RegisterLower>
     </CDForm>
     );
       if (this.state.loading){
@@ -123,7 +226,7 @@ class ContactData extends Component {
     return (
       <CDWrapper>
         <h4>Enter your Contact Data</h4>
-          {form}
+         {form}
       </CDWrapper>
     );
   }

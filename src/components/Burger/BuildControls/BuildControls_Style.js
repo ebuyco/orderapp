@@ -11,17 +11,17 @@ const BuildControlsStyles = styled.div`
         width: 100%;
         & > p {
            color: #3751FE;
-           font-family: Montserrat-Regular;   
+           font-family: inherit;
            text-align: center;
            em {
-                   font-family: Montserrat-Black;
+                   font-family: inherit;
                    font-style: inherit;
                    padding:0.5rem;
            }
            strong {
-                font-family: Montserrat-Semibold;
+                font-family: inherit;
                 margin: 2px;
-           }  
+           }
         }
 `;
 
@@ -36,7 +36,7 @@ const OrderButton = styled.button`
         cursor: pointer;
         display: flex;
         font: inherit;
-        font-family: Montserrat-Semibold;  
+        font-family: inherit;
         justify-content: center;
         margin: 0 auto;
         outline: none;
@@ -47,22 +47,22 @@ const OrderButton = styled.button`
         &:hover {
                 background-color: #00796B;
                 border: 1px solid #71BF72;
-                color: #ffffff; 
+                color: #ffffff;
         }
         &:active {
                 background-color: #00796B;
                 border: 1px solid #71BF72;
                 color: #ffffff;
         }
-          
+
         &[disabled] {
                 background-color: #FF5722;
                 border: 1px solid #FFA32A;
                 color: #FFFFFF;
                 cursor: not-allowed;
                 &[not]{
-                 animation: enable 0.3s linear;    
-                } 
+                 animation: enable 0.3s linear;
+                }
               }
         img {
                 float: left;
@@ -80,15 +80,15 @@ const Animation = keyframes`
             60% {
                 transform: scale(1.1);
             }
-       } 
+       }
 
        to {
         100% {
                 transform: scale(1);
             }
        }
-  
-       
+
+
 `;
 
 

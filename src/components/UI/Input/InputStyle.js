@@ -11,28 +11,28 @@ const InputStyle = styled.div`
             margin-bottom: 8px;
       }
       select {
-        position: relative;
         background-color: DodgerBlue;
-        border-bottom: 1px solid #000;
         border: none;
-        width: 100%;
+        border-bottom: 1px solid #000;
+        font-size: 2rem;
         padding: 0.5rem;
-        font-size: 1rem;
+        position: relative;
+        width: 100%;
         &:focus {
-          outline: 0;
           border-color:  #FF0000,
+          outline: 0;
         }
        &:select {
           display: none;
       }
         &:active {
+          background-color: var(--accentFg);
           background-image: linear-gradient(var(--accentFg), var(--accentFg)),
           linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
           linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
           linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
-          color: var(--accentBg);
           border-color: var(--accentFg);
-          background-color: var(--accentFg);
+          color: var(--accentBg);
         }
         &:hover {
           background-image: linear-gradient(var(--accentFg), var(--accentFg)),
@@ -41,15 +41,15 @@ const InputStyle = styled.div`
           linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
         }
         &:after{
-          position: absolute;
-          left: 100px;
-          content: "";
-          top: 14px;
-          right: 10px;
-          width: 0;
-          height: 0;
           border: 6px solid transparent;
           border-color: #fff transparent transparent transparent;
+          content: "";
+          height: 0;
+          left: 100px;
+          position: absolute;
+          right: 10px;
+          top: 14px;
+          width: 0;
         }
       }
     input {
@@ -65,6 +65,32 @@ const InputStyle = styled.div`
           background-color: #cccccc;
           outline: none;
       }
+    }
+    p{
+      color: red;
+      font-size: 1.5rem;
+      margin: 5px 0;
+    }
+    &.InputElement {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    font: inherit;
+    outline: none;
+    padding: 6px 10px;
+    width: 100%;
+
+    &:focus {
+    outline: none;
+    background-color: #ccc;
+      }
+
+    }
+
+    &.Invalid {
+    border: 1px solid red;
+    background-color: #FDA49A;
     }
 
 `;
